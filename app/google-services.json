@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "714116804897",
+    "firebase_url": "https://gmap-49df0.firebaseio.com",
+    "project_id": "gmap-49df0",
+    "storage_bucket": "gmap-49df0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:714116804897:android:cfc2ef086b4d6fbadd8e60",
+        "android_client_info": {
+          "package_name": "kr.puze.gmap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "714116804897-877osn83kmvklfp8rmuauvq2khou4kga.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "kr.puze.gmap",
+            "certificate_hash": "6f6427e2bbddcfbee7ea8084e7cab0f58c362861"
+          }
+        },
+        {
+          "client_id": "714116804897-1dhn10ojeq770kl4d0ob2fkqms2uhmva.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDy2kpFF6NXXnpSR_XCe04u3pQwE4_2Z9E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "714116804897-1dhn10ojeq770kl4d0ob2fkqms2uhmva.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

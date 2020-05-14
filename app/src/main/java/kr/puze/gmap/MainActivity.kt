@@ -1,5 +1,6 @@
 package kr.puze.gmap
 
+import android.content.Intent
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.net.Uri
@@ -139,10 +140,6 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback {
                     view.text_name.text = marker.title
                     view.text_number.text = marker.snippet
                     view.image.setImageBitmap(marker.tag as Bitmap?)
-//                    Glide.with(this@MainActivity).load(marker.tag).into(view.image)
-//                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-//                        view.image.clipToOutline = true
-//                    }
                     Log.d("LOGTAG", "text_name = ${view.text_name.text}")
                     Log.d("LOGTAG", "text_number = ${view.text_number.text}")
                     Log.d("LOGTAG", "image = ${view.image.drawable}")
@@ -152,6 +149,9 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback {
                 return view
             }
         })
+        mMap.setOnInfoWindowClickListener {
+            startActivity(Intent(Intent.ACTION_DIAL, Uri.parse("tel:${it.snippet}")))
+        }
         Log.d("LOGTAG", "onMapReady")
     }
 
